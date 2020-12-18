@@ -13,7 +13,11 @@ class CharactersController < ApplicationController
   #SHOW
   get '/characters/:id' do
     @character = Character.find_by(id: params[:id])
-    erb :'characters/show'
+    if @character
+      erb :'characters/show'
+    else
+      redirect '/characters'
+    end
   end
 
 end
