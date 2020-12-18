@@ -4,6 +4,9 @@
   
 # To activate changes in CSS, hit CMD + SHIFT + R
 
+# RESTful Routes :
+  ## index, show, new, create, edit, update, destroy
+
 # PROGRESS - 
   On video: https://www.youtube.com/watch?v=hTucqaw8Okg&feature=youtu.be
   At 26:27 minutes in
