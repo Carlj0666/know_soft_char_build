@@ -1,4 +1,4 @@
-<h1> CP 2077 - Characters List: </h1>
-<ul><%@characters.each do |char|%>
-  <li><%= char.name %><br></li>
-  <%end%></ul>
+<h1><%= @character.name %></h1>
+<h3><p>Hometown: <%= @character.hometown %><p></h3>
+<h3><p>Skill: <%= @character.skill %><p></h3>
+<h3><p>Iconic Item: <%= @character.iconic_item %><p></h3>

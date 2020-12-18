@@ -11,7 +11,8 @@ class CharactersController < ApplicationController
 
 
   #SHOW
-  get '/characters/:id' do 
+  get '/characters/:id' do
+    @character = Character.find_by(id: params[:id])
     erb :'characters/show'
   end
 
