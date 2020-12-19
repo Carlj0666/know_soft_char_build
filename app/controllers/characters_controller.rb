@@ -6,6 +6,10 @@ class CharactersController < ApplicationController
       erb :'characters/index'
   end
 
+  #NEW
+  get '/characters/new' do
+    erb :'/characters/new'
+  end
 
   #build specific routes above dynamic routes
 
@@ -19,7 +23,5 @@ class CharactersController < ApplicationController
       redirect '/characters'
     end
   end
-
-  
 
 end
