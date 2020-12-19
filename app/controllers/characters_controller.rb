@@ -8,6 +8,12 @@ class CharactersController < ApplicationController
 
   #NEW
   get '/characters/new' do
+    # binding.pry
+    erb :'/characters/new'
+  end
+
+  #CREATE
+  post '/characters' do
     erb :'/characters/new'
   end
 
