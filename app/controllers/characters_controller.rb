@@ -8,13 +8,13 @@ class CharactersController < ApplicationController
 
   #NEW
   get '/characters/new' do
-    # binding.pry
     erb :'/characters/new'
   end
 
   #CREATE
   post '/characters' do
-    erb :'/characters/new'
+    @character = Character.create(params)
+    redirect '/characters'
   end
 
   #build specific routes above dynamic routes
