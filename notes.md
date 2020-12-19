@@ -9,14 +9,14 @@
     INDEX X - READ
     SHOW X - READ
     NEW X - CREATE
-    create - CREATE
-    edit - UPDATE
+    CREATE X - CREATE
+    EDIT X - UPDATE
     update - UPDATE
     destroy - DESTROY
 
 # PROGRESS - 
   On video: https://www.youtube.com/watch?v=R8aHPOUrvPI&feature=youtu.be
-  At 38:21 minutes in
+  At 51:00 minutes in
 
 
 # REVIEW AND STUDY https://www.youtube.com/watch?v=R8aHPOUrvPI&feature=youtu.be
