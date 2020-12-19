@@ -30,4 +30,10 @@ class CharactersController < ApplicationController
     end
   end
 
+  #EDIT
+  get '/characters/:id/edit' do
+    @character = Character.find_by(id: params[:id])
+    erb :'/characters/edit'
+  end
+
 end
