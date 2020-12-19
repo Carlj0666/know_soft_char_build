@@ -1,5 +1,5 @@
 <h1>CP 2077 - Knowsoft Character Bulder</h1>
 <h2>Characters List: </h2>
 <ul><%@characters.each do |char|%>
-  <li><%= char.name %><br></li>
+  <li><a href="/characters/<%= char.id %>"><%= char.name %></a><br></li>
 <%end%></ul>
