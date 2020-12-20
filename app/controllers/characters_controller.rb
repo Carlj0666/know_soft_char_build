@@ -7,8 +7,12 @@ class CharactersController < ApplicationController
 
   #CREATE
   post "/characters" do
+    if params[:name] == ""
+      redirect "/characters/new"
+    else
     @character = Character.create(params)
     redirect '/characters'
+    end
   end
 
   #INDEX
