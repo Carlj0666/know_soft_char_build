@@ -44,7 +44,9 @@ class CharactersController < ApplicationController
 
   #DELETE
   delete "/characters/:id" do
-    binding.pry
+    @character = Character.find_by(id: params[:id])
+    @character.destroy
+    redirect "/characters"
   end
 
 end
