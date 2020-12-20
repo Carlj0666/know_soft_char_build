@@ -19,7 +19,6 @@ class CharactersController < ApplicationController
 
   #build specific routes above dynamic routes
 
-
   #SHOW
   get '/characters/:id' do
     @character = Character.find_by(id: params[:id])
@@ -34,6 +33,13 @@ class CharactersController < ApplicationController
   get '/characters/:id/edit' do
     @character = Character.find_by(id: params[:id])
     erb :'/characters/edit'
+  end
+
+  #UPDATE
+  patch '/characters/:id/edit' do
+    @character = Character.find_by(id: params[:id])
+    @character.update(name: params[:name])
+    # binding.pry
   end
 
 end

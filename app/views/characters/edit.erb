@@ -2,16 +2,16 @@
 <h2>Ripper Doc - "Be the change you desire"</h2>
 <h4>You can change your meat body here</h4><br>
 
-<form method="POST" action="/characters/<%=@character.id%>">
+<form method="POST" action="/characters/<%=@character.id%>/edit">
+  <input type="hidden" value="PATCH" name="_method">
   <p>Name: <br>
-  <input type="text" name="name" value="<%=@character.name%>"><br>
+  <input type="text" name="characters[name]" value="<%=@character.name%>"><br>
   <p>Hometown:<br>
-  <input type="text" name="hometown" value="<%=@character.hometown%>"><br>
+  <input type="text" name="characters[hometown]" value="<%=@character.hometown%>"><br>
   <p>Skill:<br>
-  <input type="text" name="skill" value="<%=@character.skill%>"><br>
+  <input type="text" name="characters[skill]" value="<%=@character.skill%>"><br>
   <p>Iconic Item:<br>
-  <input type="text" name="iconic_item" value="<%=@character.iconic_item%>"><br>
+  <input type="text" name="characters[iconic_item]" value="<%=@character.iconic_item%>"><br>
   <br>
-  <input type="submit" value="Render Clone">
+  <input type="submit" value="Edit Clone">
 </form>
-<small><a href="/characters/:id/edit">Ripper Doc - "Be the change you desire"</a></small><br>

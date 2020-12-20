@@ -21,3 +21,6 @@
 
 # REVIEW AND STUDY https://www.youtube.com/watch?v=R8aHPOUrvPI&feature=youtu.be
 from 0:00 t0 20:00
+
+
+<!-- <small><a href="/characters/:id/edit">Ripper Doc EDITOR- "Be the change you desire"</a></small><br> -->
