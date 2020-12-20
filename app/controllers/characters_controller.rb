@@ -1,11 +1,5 @@
 class CharactersController < ApplicationController
 
-  #INDEX
-  get '/characters' do
-      @characters = Character.all
-      erb :'characters/index'
-  end
-
   #NEW
   get '/characters/new' do
     erb :'/characters/new'
@@ -15,6 +9,12 @@ class CharactersController < ApplicationController
   post '/characters' do
     @character = Character.create(params)
     redirect '/characters'
+  end
+
+  #INDEX
+  get '/characters' do
+      @characters = Character.all
+      erb :'characters/index'
   end
 
   #build specific routes above dynamic routes
@@ -38,8 +38,8 @@ class CharactersController < ApplicationController
   #UPDATE
   patch '/characters/:id/edit' do
     @character = Character.find_by(id: params[:id])
-    @character.update(name: params[:name])
-    # binding.pry
+    @character.update(params[:character])
+    redirect "/characters/#{@character.id}"
   end
 
 end
