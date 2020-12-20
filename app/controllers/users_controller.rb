@@ -9,8 +9,14 @@ class UsersController < ApplicationController
 
   #process form/create user
   post "/signup" do
+    if params[:username] == nil || params[:password] == nil
+      redirect "/signup"
+    else
+    binding.pry
     user = User.create(params[:user])
-    #binding.pry
+    session[:user_id] = user.id
+    redirect "/characters"
+
   end
 
 end
