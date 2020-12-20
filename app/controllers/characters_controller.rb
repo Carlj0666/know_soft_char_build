@@ -42,9 +42,9 @@ class CharactersController < ApplicationController
     redirect "/characters/#{@character.id}"
   end
 
-  # #DELETE
-  # delete '/characters/:id'
-  #   binding.pry
-  # end
+  #DELETE
+  delete "/characters/:id" do
+    binding.pry
+  end
 
 end

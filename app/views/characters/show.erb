@@ -7,7 +7,7 @@
 <a href="/characters/<%= @character.id %>/edit">Ripper Doc "Be the CHANGE you desire, <%= @character.name %>"</a>
 
 <!--DELETE-->
-<form method="POST" action="characters/<%=@character.id%>">
+<form method="POST" action="/characters/<%=@character.id%>">
   <input type="hidden" value="DELETE" name="_method">
   <input type="submit" value="Delete">
 </form>
