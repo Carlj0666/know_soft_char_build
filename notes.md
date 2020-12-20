@@ -11,16 +11,13 @@
     NEW X - CREATE
     CREATE X - CREATE
     EDIT X - UPDATE
-    update - UPDATE
-    destroy - DESTROY
+    UPDATE X - UPDATE
+    DESTROY X - DESTROY
 
 # PROGRESS - 
-  On video: https://www.youtube.com/watch?v=R8aHPOUrvPI&feature=youtu.be
-  At 51:00 minutes in
+  On video: https://www.youtube.com/watch?v=N0OhByOF3EM&feature=youtu.be
+  At 00:00 minutes in
 
 
 # REVIEW AND STUDY https://www.youtube.com/watch?v=R8aHPOUrvPI&feature=youtu.be
 from 0:00 t0 20:00
-
-
-<!-- <small><a href="/characters/:id/edit">Ripper Doc EDITOR- "Be the change you desire"</a></small><br> -->
