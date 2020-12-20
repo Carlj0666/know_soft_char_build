@@ -5,7 +5,7 @@
 <form method="POST" action="/characters/<%=@character.id%>/edit">
   <input type="hidden" value="PATCH" name="_method">
   <p>Name: <br>
-  <input type="text" name="character[name]" value="<%=@character.name%>"><br>
+  <input type="text" name="character[name]" value="<%=@character.name%>" required><br>
   <p>Hometown:<br>
   <input type="text" name="character[hometown]" value="<%=@character.hometown%>"><br>
   <p>Skill:<br>

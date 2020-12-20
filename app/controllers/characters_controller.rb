@@ -41,9 +41,9 @@ class CharactersController < ApplicationController
 
   #UPDATE
   patch "/characters/:id/edit" do
-    @character = Character.find_by(id: params[:id])
-    @character.update(params[:character])
-    redirect "/characters/#{@character.id}"
+      @character = Character.find_by(id: params[:id])
+      @character.update(params[:character])
+      redirect "/characters/#{@character.id}"
   end
 
   #DELETE
