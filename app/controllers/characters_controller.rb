@@ -45,16 +45,24 @@ class CharactersController < ApplicationController
 
   #UPDATE
   patch "/characters/:id/edit" do
-      @character = Character.find_by(id: params[:id])
+    @character = Character.find_by(id: params[:id])
+    if @character.user == current_user
       @character.update(params[:character])
       redirect "/characters/#{@character.id}"
+    else
+      redirect "/characters"
+    end
   end
 
   #DELETE
   delete "/characters/:id" do
     @character = Character.find_by(id: params[:id])
-    @character.destroy
-    redirect "/characters"
+    if @character.user == current_user
+      @character.destroy
+      redirect "/characters"
+    else
+      redirect "/characters"
+    end
   end
 
 
