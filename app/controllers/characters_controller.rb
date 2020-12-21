@@ -7,11 +7,16 @@ class CharactersController < ApplicationController
 
   #CREATE
   post "/characters" do
-    if params[:name] == ""
-      redirect "/characters/new"
+    # if params[:name] == ""
+    #   redirect "/characters/new"
+    # else
+    # character = current_user.characters.create(params) #ADDS USER ID OF CURRENT USER TO THIS CHARACTER
+    character = Character.new(params[:character])
+    if character.save
+      redirect '/characters'
     else
-    character = current_user.characters.create(params) #ADDS USER ID OF CURRENT USER TO THIS CHARACTER
-    redirect '/characters'
+      @errors = character.errors.full_messages.join(" - ")
+      
     end
   end
 
@@ -60,7 +65,7 @@ class CharactersController < ApplicationController
     if @character.user == current_user
       @character.destroy
       redirect "/characters"
-    else
+      else
       redirect "/characters"
     end
   end
