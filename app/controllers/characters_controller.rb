@@ -10,7 +10,8 @@ class CharactersController < ApplicationController
     if params[:name] == ""
       redirect "/characters/new"
     else
-    character = Character.create(params)
+      binding.pry
+    character = current_user.characters.create(params)
     redirect '/characters'
     end
   end
