@@ -19,16 +19,18 @@
         <%= yield %>
 
       <footer class="branding">
-      <small><a href="/characters">Everyone</a></small><br>
+      <small><a href="/characters">Characters</a></small><br>
       <small><a href="/characters/new">Cloning Vat</a></small><br>
-      <small>&copy; 2020 <strong>KnowSoftCharBuild</strong></small>
-      <br>
       <% if logged_in? %>
-        <h4>Logged in as: <%=current_user.username%></h4>
-        <a href="/logout">Log Out</a>
-        <% else %>
-        <a href="/login">Jack In</a>
-      <% end %>
+      <small><a href="/logout">Log Out</a></small>
+      <h4>Logged in as: <%=current_user.username%></h4>
+      <% else %>
+      <small><a href="/login">Jack In</a></small>
+      <br>
+      <small><a href="/signup">Sign Up</a></small>
+    <% end %>
+    <br>
+      <small>&copy; 2020 <strong>KnowSoftCharBuild</strong></small>
       </footer>
     </div>
 

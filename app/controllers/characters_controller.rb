@@ -10,7 +10,7 @@ class CharactersController < ApplicationController
     if params[:name] == ""
       redirect "/characters/new"
     else
-    @character = Character.create(params)
+    character = Character.create(params)
     redirect '/characters'
     end
   end
@@ -53,6 +53,6 @@ class CharactersController < ApplicationController
     redirect "/characters"
   end
 
-  
+
 
 end

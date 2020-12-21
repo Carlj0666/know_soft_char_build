@@ -5,6 +5,7 @@ class CreateCharacters < ActiveRecord::Migration
       t.string :hometown
       t.string :skill
       t.string :iconic_item
+      t.integer :user_id
     end
   end
 end

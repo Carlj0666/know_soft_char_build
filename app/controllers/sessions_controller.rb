@@ -6,7 +6,8 @@ class SessionsController < ApplicationController
 
   post "/login" do
     user = User.find_by(username: params[:user][:username])
-    if user && user.authenticate(params[:user][:password]) #THE AUTHENTICATE METHOD COMES FROM HAS_SECURE_PASSWORD in the USER model.
+    if user && user.authenticate(params[:user][:password]) #THE AUTHENTICATE METHOD COMES FROM HAS_SECURE_PASSWORD in the USER model. 
+      #Checks to see if the password entered matches the password stored in the password digest.
       session[:user_id] = user.id
       redirect "/characters"
     else
@@ -15,7 +16,7 @@ class SessionsController < ApplicationController
 
   end
 
-  get "/logout" do 
+  get "/logout" do
     session.clear
     redirect "/login"
   end
