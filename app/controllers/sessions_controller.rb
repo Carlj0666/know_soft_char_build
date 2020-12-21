@@ -1,7 +1,8 @@
 class SessionsController < ApplicationController
 
   get "/logout" do 
-    "logging out test"
+    session.clear
+    redirect "/login"
   end
 
 end
