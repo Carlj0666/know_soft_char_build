@@ -22,6 +22,10 @@
       <small><a href="/characters">Everyone</a></small><br>
       <small><a href="/characters/new">Cloning Vat</a></small><br>
       <small>&copy; 2020 <strong>KnowSoftCharBuild</strong></small>
+      <br>
+      <% if logged_in? %>
+        <h4>Logged in as: <%=current_user.username%></h4>
+      <% end %>
       </footer>
     </div>
 
