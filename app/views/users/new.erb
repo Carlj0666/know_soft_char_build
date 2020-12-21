@@ -1,6 +1,6 @@
 <h1>CP 2077 - Knowsoft Character Bulder</h1>
 <h2> Signup form</h2>
-<%= @errors %> #Looks like I only need to setup a conditional had I chosen to iterate over the errors in the controller instead of .join
+<%= @errors %>
 <form method="POST" action="/signup">
   <input type="text" name="user[username]"><br> <!--consider adding back "required" within in put type on this line-->
   <input type="password" name="user[password]"><br>  

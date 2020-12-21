@@ -22,6 +22,6 @@
 
 # REVIEW AND STUDY https://www.youtube.com/watch?v=R8aHPOUrvPI&feature=youtu.be
 from 0:00 t0 20:00
-\
+
 
 # CAN I BUILD validates into my characters model for the name attribute? Test later.
