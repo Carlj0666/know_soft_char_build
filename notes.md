@@ -16,8 +16,12 @@
 
 # PROGRESS - 
   On video: https://www.youtube.com/watch?v=N0OhByOF3EM&feature=youtu.be
-  At 00:00 minutes in
+  At 33:56 minutes in
+    Working on validation error display
 
 
 # REVIEW AND STUDY https://www.youtube.com/watch?v=R8aHPOUrvPI&feature=youtu.be
 from 0:00 t0 20:00
+\
+
+# CAN I BUILD validates into my characters model for the name attribute? Test later.

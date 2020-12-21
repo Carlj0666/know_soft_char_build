@@ -8,6 +8,7 @@ class CharactersController < ApplicationController
   #CREATE
   post "/characters" do
     if params[:name] == ""
+      binding.pry
       redirect "/characters/new"
     else
     @character = Character.create(params)
