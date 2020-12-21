@@ -10,8 +10,7 @@ class CharactersController < ApplicationController
     if params[:name] == ""
       redirect "/characters/new"
     else
-      binding.pry
-    character = current_user.characters.create(params)
+    character = current_user.characters.create(params) #ADDS USER ID OF CURRENT USER TO THIS CHARACTER
     redirect '/characters'
     end
   end
@@ -37,7 +36,11 @@ class CharactersController < ApplicationController
   #EDIT
   get "/characters/:id/edit" do
     @character = Character.find_by(id: params[:id])
-    erb :'/characters/edit'
+    if @character.user == current_user
+      erb :'/characters/edit'
+    else
+      redirect "/characters"
+    end
   end
 
   #UPDATE
