@@ -19,6 +19,27 @@
     line-height: 18px;
   }
 
+  <style>
+  a:link {
+    color:  rgb(102, 255, 102);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(247, 0, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  </style>
+
   .wrapper {
     background: rgb(0, 0, 0);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
