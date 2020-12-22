@@ -7,11 +7,8 @@ class CharactersController < ApplicationController
 
   #CREATE
   post "/characters" do
-    # if params[:name] == ""
-    #   redirect "/characters/new"
-    # else
     # character = current_user.characters.create(params) #ADDS USER ID OF CURRENT USER TO THIS CHARACTER
-    character = Character.new(params[:character])
+    character = current_user.characters.create(params)
     if character.save
       redirect '/characters'
     else
