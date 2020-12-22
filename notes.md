@@ -16,7 +16,7 @@
 
 # PROGRESS - 
   On video: https://www.youtube.com/watch?v=N0OhByOF3EM&feature=youtu.be
-  At 33:56 minutes in
+  At 1:05:22 minutes in
     Working on validation error display
 
 
