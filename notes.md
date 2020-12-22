@@ -1,7 +1,3 @@
-# Build out the table for Users and Characters
-  - Tables
-  - Models
-  
 # To activate changes in CSS, hit CMD + SHIFT + R
 
 # RESTful Routes :
