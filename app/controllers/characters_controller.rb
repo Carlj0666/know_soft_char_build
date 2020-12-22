@@ -16,7 +16,7 @@ class CharactersController < ApplicationController
       redirect '/characters'
     else
       @errors = character.errors.full_messages.join(" - ")
-      
+      erb :"characters/new"
     end
   end
 
