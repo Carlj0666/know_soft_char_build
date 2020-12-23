@@ -19,9 +19,9 @@
     line-height: 18px;
   }
 
-  <style>
+ 
   a:link {
-    color:  rgb(102, 255, 102);
+    color:  green;
     background-color: transparent;
     text-decoration: none;
   }
@@ -38,7 +38,11 @@
     text-decoration: underline;
   }
 
-  </style>
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
   .wrapper {
     background: rgb(0, 0, 0);
