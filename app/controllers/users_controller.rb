@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   #process form/create user
   post "/signup" do
     user = User.new(params[:user])
+    
     #we don't make an instance variable becuase we are redirecting which will cause us to lose the var as soon as it redirects
     if user.save #if the user can save, (which is determined by validation, if a username or pw is not present, it won't save)
       session[:user_id] = user.id #create and assign the session id
