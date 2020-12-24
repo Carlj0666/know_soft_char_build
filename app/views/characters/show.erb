@@ -3,6 +3,7 @@
 <h3><p>Hometown: <%= @character.hometown %><p></h3>
 <h3><p>Skill: <%= @character.skill %><p></h3>
 <h3><p>Iconic Item: <%= @character.iconic_item %><p></h3>
+<h3><p>Cloned By: <%=@character.user.username%><p></h3>
 
 <a href="/characters/<%= @character.id %>/edit">Ripper Doc "Be the CHANGE you desire, <%= @character.name %>"</a>
 
