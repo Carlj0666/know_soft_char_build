@@ -105,6 +105,8 @@
     border-top: 2px solid rgb(3, 3, 3);
     margin-top: 20px;
     padding-top: 20px;
+    max-width: 100px;
+    float: inline-start;
   }
 }
 
@@ -137,4 +139,5 @@
     font-size: 18px;
     line-height: 24px;
   }
+
 }

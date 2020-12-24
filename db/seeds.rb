@@ -1,4 +1,4 @@
-#Character.destroy_all
+# Character.destroy_all
 
 # Character.create(name: "Johnny Silverhand", hometown: "Night City", skill: "Guitar Licks", iconic_item: "Silver Hand")
 # Character.create(name: "Jackie Welles", hometown: "Night City", skill: "Runin'", iconic_item: "Book - For Whom The Bell Tolls")
