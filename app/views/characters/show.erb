@@ -5,7 +5,7 @@
 <h3><p>Iconic Item: <%= @character.iconic_item %><p></h3>
 <h3><p>Cloned By: <%=@character.user.username%><p></h3>
 
-<a href="/characters/<%= @character.id %>/edit">Ripper Doc "Be the CHANGE you desire, <%= @character.name %>"</a>
+<a href="/characters/<%= @character.id %>/edit">Alter Clone: <%= @character.name %></a>
 
 <!--DELETE-->
 <form method="POST" action="/characters/<%=@character.id%>">

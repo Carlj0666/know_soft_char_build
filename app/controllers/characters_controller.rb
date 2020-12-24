@@ -35,7 +35,7 @@ class CharactersController < ApplicationController
   #EDIT
   get "/characters/:id/edit" do
     @character = Character.find_by(id: params[:id])
-    if @character.user == current_user
+    if logged_in? && @character.user == current_user
       erb :'/characters/edit'
     else
       redirect "/characters"
@@ -45,12 +45,12 @@ class CharactersController < ApplicationController
   #UPDATE
   patch "/characters/:id/edit" do
     @character = Character.find_by(id: params[:id])
-    if @character.user == current_user
-      @character.update(params[:character])
-      redirect "/characters/#{@character.id}"
-    else
-      redirect "/characters"
-    end
+      if logged_in? && @character.user == current_user
+        @character.update(params[:character])
+        redirect "/characters/#{@character.id}"
+      else
+        redirect "/characters"
+      end
   end
 
   #DELETE
