@@ -5,6 +5,8 @@
 <h3><p>Iconic Item: <%= @character.iconic_item %><p></h3>
 <h3><p>Cloned By: <%=@character.user.username%><p></h3>
 
+
+<% if logged_in? && @character.user.username == current_user.username%>
 <a href="/characters/<%= @character.id %>/edit">Alter Clone: <%= @character.name %></a>
 
 <!--DELETE-->
@@ -12,3 +14,4 @@
   <input type="hidden" value="DELETE" name="_method">
   <input type="submit" value="Delete">
 </form>
+<%end%>

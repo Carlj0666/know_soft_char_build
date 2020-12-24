@@ -2,14 +2,18 @@ class CharactersController < ApplicationController
 
   #NEW
   get "/characters/new" do
-    erb :'/characters/new'
+    if logged_in?
+      erb :'/characters/new'
+    else
+      redirect "/login"
+    end
   end
 
   #CREATE
   post "/characters" do
     character = current_user.characters.create(params)
     if character.save
-      redirect '/characters'
+      redirect "/characters"
     else
       @errors = character.errors.full_messages.join(" - ")
       erb :"characters/new"
