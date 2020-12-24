@@ -72,6 +72,12 @@
     line-height: 36px;
   }
 
+  h5 {
+    font-size: 14px;
+    line-height: 36px;
+    color: red;
+  }
+
   p {
     margin-bottom: 18px;
   }

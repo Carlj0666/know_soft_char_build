@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
 
   helpers do 
     def logged_in? #is a user logged in?
-      !!session[:user_id]
+      !!session[:user_id] # double bang forces boolean return val
     end
 
     def current_user #who is the current logged in user?

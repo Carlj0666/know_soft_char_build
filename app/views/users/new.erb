@@ -1,10 +1,9 @@
 <img src="images/CP.png" width="1000">
 <h1>CP 2077 - Knowsoft Character Builder</h1>
 <h2> Signup form</h2>
-<%= @errors %>
+<h5><%= @errors %></h5>
 <form method="POST" action="/signup">
-  <input type="text" name="user[username]"><br> <!--consider adding back "required" within in put type on this line-->
+  <input type="text" name="user[username]"><br>
   <input type="password" name="user[password]"><br>  
   <input type="submit" value="Sign Up">  
 </form>
-
