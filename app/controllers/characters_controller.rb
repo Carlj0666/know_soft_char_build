@@ -7,7 +7,6 @@ class CharactersController < ApplicationController
 
   #CREATE
   post "/characters" do
-    # character = current_user.characters.create(params) #ADDS USER ID OF CURRENT USER TO THIS CHARACTER
     character = current_user.characters.create(params)
     if character.save
       redirect '/characters'
@@ -22,8 +21,6 @@ class CharactersController < ApplicationController
       @characters = Character.all
       erb :'characters/index'
   end
-
-  #build specific routes above dynamic routes
 
   #SHOW
   get "/characters/:id" do
@@ -66,7 +63,5 @@ class CharactersController < ApplicationController
       redirect "/characters"
     end
   end
-
-
 
 end

@@ -6,7 +6,7 @@ class ApplicationController < Sinatra::Base
     set :public_folder, 'public'
     set :views, 'app/views'
     enable :sessions
-    set :session_secret, 'top_session' #Look into .env for this(https://github.com/bkeepers/dotenv), not required for proj.
+    set :session_secret, 'top_session'
   end
 
   get "/" do
@@ -14,11 +14,11 @@ class ApplicationController < Sinatra::Base
   end
 
   helpers do 
-    def logged_in? #is a user logged in?
-      !!session[:user_id] # double bang forces boolean return val
+    def logged_in?
+      !!session[:user_id]
     end
 
-    def current_user #who is the current logged in user?
+    def current_user
       if @current_user
          @current_user
       else

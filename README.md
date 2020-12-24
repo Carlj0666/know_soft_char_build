@@ -1,6 +1,6 @@
 # The Know Soft Character Builder
 
-#### The Know Soft Character Builder is a Ruby based web app designed to allow users to create and modify characters for the world of Cyberpunk, created by Mike Pondsmith. Characters have several attributes, to tell us a little abou who the characters are that can be added and modified by the user who created them:
+#### The Know Soft Character Builder is a Ruby based web app designed to allow users to create and modify characters for the world of Cyberpunk, created by Mike Pondsmith. Characters have several attributes, to tell us a little about who the characters are that can be added and modified by the user who created them:
 
 * Name
 * Hometown
