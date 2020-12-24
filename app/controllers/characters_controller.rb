@@ -56,7 +56,7 @@ class CharactersController < ApplicationController
   #DELETE
   delete "/characters/:id" do
     @character = Character.find_by(id: params[:id])
-    if @character.user == current_user
+    if @character && @character.user == current_user
       @character.destroy
       redirect "/characters"
       else
